@@ -19,10 +19,22 @@ html, body {
     background-color: #212121;
 }
 
+#backbtn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
 /* Header style */
 #header {
     padding: 20px;
-    
     text-align: center;
 }
 
@@ -37,13 +49,12 @@ h1 {
     background-color: #212121;
 }
 
-#nav input[type=text] {
+#nav input[type=text].search-input {
     font-size: 17px;
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 
 #nav ul {
     display: flex;
@@ -82,4 +93,68 @@ p {
     color: #666;
     text-align: center;
     margin: 20px;
+}
+
+#feed {
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto; /* Center the feed area */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog form styles */
+#publish {
+    padding: 20px;
+    background-color: #fff;
+    width: 60%;
+    margin: 20px auto; /* Center the publish area */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"]:not(.search-input),
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
 }
